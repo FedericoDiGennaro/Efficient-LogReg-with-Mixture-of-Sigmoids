@@ -1,0 +1,33 @@
+{
+  "dataset": "a9a",
+  "split": "train",
+  "n": 1000,
+  "repeats": 5,
+  "b_values": [
+    0.01,
+    0.1,
+    0.5,
+    1.0,
+    2.0,
+    5.0,
+    8.0,
+    10.0
+  ],
+  "ew_steps": [
+    20,
+    20,
+    20,
+    20,
+    29,
+    60,
+    130,
+    200
+  ],
+  "cmd_vars": {
+    "aioli_t_inner": 80,
+    "ew_n_particles": 12,
+    "ew_step_size": 0.01,
+    "ew_grad_clip": 50.0,
+    "ew_mala_window": 0
+  }
+}

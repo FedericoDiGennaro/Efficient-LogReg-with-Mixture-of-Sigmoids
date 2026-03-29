@@ -1,0 +1,115 @@
+{
+  "dataset": "w8a",
+  "split": "train",
+  "n": 2000,
+  "repeats": 5,
+  "mode": "unreg_ogd_ons",
+  "aioli": {
+    "B_opt": 0.3125,
+    "lambda_opt": 10.24,
+    "lambda_grid_rows": [
+      [
+        10.24,
+        0.4006121766664988
+      ],
+      [
+        2.56,
+        0.45706920092478515
+      ],
+      [
+        0.64,
+        0.5414547218873579
+      ],
+      [
+        0.16,
+        0.6229698620198049
+      ],
+      [
+        0.04,
+        0.6696131898735637
+      ],
+      [
+        0.01,
+        0.6866192878370677
+      ],
+      [
+        0.0025,
+        0.6914663376995356
+      ]
+    ],
+    "B_fixed": 5.0,
+    "lambda_fixed_for_B5": 0.04
+  },
+  "ew": {
+    "B_opt": 10.0,
+    "B_grid_rows": [
+      [
+        10.0,
+        0.41859477221795865
+      ],
+      [
+        8.0,
+        0.4200621622338633
+      ],
+      [
+        5.0,
+        0.43791902130600696
+      ],
+      [
+        2.0,
+        0.5106591151317765
+      ],
+      [
+        1.0,
+        0.5805977843761836
+      ],
+      [
+        0.5,
+        0.6422906849511104
+      ],
+      [
+        0.1,
+        0.6899132815671397
+      ],
+      [
+        0.01,
+        0.6932981930241041
+      ]
+    ],
+    "B_fixed": 5.0,
+    "base_params": {
+      "n_particles": 12,
+      "step_size": 0.01,
+      "mala_steps_per_round": 20,
+      "grad_clip": 50.0,
+      "adapt_step": true,
+      "target_accept": 0.57,
+      "rm_gamma0": 0.5,
+      "rm_gamma_decay": 0.25,
+      "step_size_min": 0.0001,
+      "step_size_max": 1.0,
+      "mala_window": null
+    },
+    "tune_rounds": 1000
+  },
+  "curve_key_map": {
+    "curve_AIOLI_B5": "AIOLI-B5",
+    "curve_AIOLI_Bopt": "AIOLI-Bopt",
+    "curve_EW_B5": "EW-B5",
+    "curve_EW_B5_accept": "EW-B5-accept",
+    "curve_EW_B5_h": "EW-B5-h",
+    "curve_EW_Bopt": "EW-Bopt",
+    "curve_EW_Bopt_accept": "EW-Bopt-accept",
+    "curve_EW_Bopt_h": "EW-Bopt-h",
+    "curve_OGD": "OGD",
+    "curve_ONS": "ONS"
+  },
+  "labels": {
+    "OGD": "OGD",
+    "ONS": "ONS",
+    "AIOLI-Bopt": "AIOLI (B=0.3125)",
+    "AIOLI-B5": "AIOLI (B=5)",
+    "EW-B5": "EW (B=5)",
+    "EW-Bopt": "EW (B=10)"
+  }
+}
